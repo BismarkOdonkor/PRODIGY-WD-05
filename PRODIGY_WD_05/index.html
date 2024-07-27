@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="input-group">
+            <input type="text" id="location-input" placeholder="Enter a location" />
+            <button id="get-weather">Get Weather</button>
+            <button id="get-location">Use My Location</button>
+            <button id="toggle-unit">°C</button>
+        </div>
+        <div id="loading" class="loading">Loading...</div>
+        <div id="weather-info" class="weather-info">
+            <h2 id="location"></h2>
+            <img id="weather-icon" src="" alt="Weather Icon" />
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+            <p id="uv-index"></p>
+            <p id="visibility"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+            <p id="alerts" class="alert"></p>
+            <button id="share-button">Share Weather Info</button>
+        </div>
+        <div id="forecast" class="forecast"></div>
+        <div id="search-history" class="search-history">
+            <h3>Search History</h3>
+            <ul id="history-list"></ul>
+        </div>
+        <canvas id="weather-graph" class="weather-graph"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
